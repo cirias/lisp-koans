@@ -31,11 +31,11 @@
   (let ((player-1 (make-basketball-player
                    :name "larry" :team :celtics :number 33)))
     (assert-equal "larry" (basketball-player-name player-1))
-    (assert-equal ___ (basketball-player-team player-1))
-    (assert-equal ___ (basketball-player-number player-1))
+    (assert-equal :celtics (basketball-player-team player-1))
+    (assert-equal 33 (basketball-player-number player-1))
     (assert-equal 'basketball-player (type-of player-1))
     (setf (basketball-player-team player-1) :RETIRED)
-    (assert-equal ___ (basketball-player-team player-1))))
+    (assert-equal :RETIRED (basketball-player-team player-1))))
 
 
 ;; Struct fields can have default values
