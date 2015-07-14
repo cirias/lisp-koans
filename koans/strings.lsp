@@ -74,5 +74,5 @@
     "search finds subsequences"
   (let ((title "A supposedly fun thing I'll never do again"))
     (assert-equal 2 (search "supposedly" title))
-    (assert-equal 12 (search "CHANGETHISWORD" title))))
+    (assert-equal 12 (search " fun" title))))
 
